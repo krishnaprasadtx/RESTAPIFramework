@@ -13,7 +13,7 @@ public class Hooks {
 		if(StepDefinitions.place_id==null)
 		{
 		sd.ad_place_payload_with("kris", "tamil", "asia");
-		sd.user_calls_with_http_request("AddPlaceAPI", "POST");
+		sd.user_calls_with_http_request( "POST");
 		sd.verify_place_id_created_maps_to_using("kris", "getPlaceAPI");
 		}
 	}
